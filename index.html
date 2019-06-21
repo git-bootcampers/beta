@@ -73,13 +73,25 @@
 			<h2>Chapter 3 - Death</h2>
 			<p><br>As part of a plan to conquer the world, Doom kidnapped Zebediah Killgrave, the mind-controlling supervillain known as Purple Man, and imprisoned him within a gigantic Psycho-Prism which not only bestowed Purple Man's powers on Doom, but also augmented them to a global scale.</p>
 			<p><br>Using this device, Doom manipulated the United Nations and every government to legally name him emperor of the Earth. Under Doom's command, the planet saw prosperity, equality, and the end of war and hunger, but at the cost of every citizen's free will. Additionally, Doom began to feel that his victory was almost meaningless, due to any lack of challenge to achieve or maintain his goal.</p>
-
+     
 				<div class="pagination">
 				<a onclick="three();"  style="float:left; font-size:20px; cursor:pointer;">&laquo;</a>
-				<center>3</center>
+                <center>3</center>
+                <a onclick="four();" style="float:right; font-size:20px; cursor:pointer;">&raquo;</a>
 				</div>
 			</div>
 
+
+            <div id="page4" style="display: none;" >
+                <h2>Chapter 4 - Battle Tournament</h2>
+                <p><br>With Doom's lack of challenge, It decided to have a Battle Tournament that will be held every year to ammuse his violent heart. The winner will get to be his challenger to battle and will be rich if Doom will be defeated.</p>
+    
+                    <div class="pagination">
+                    <a onclick="fourthree();" style="float:left; font-size:20px; cursor:pointer ;">&laquo;</a>
+                    <center>4</center>
+                    
+                    </div>
+                </div>
 		</div>
 
 
@@ -107,8 +119,19 @@ function one() {
 
  function three() {
 	document.getElementById("page3").style.display = "none";
-	document.getElementById("page2").style.display = "block";
+	document.getElementById("page4").style.display = "block";
  }
+
+ function four() {
+	document.getElementById("page3").style.display = "none";
+	document.getElementById("page4").style.display = "block";
+ }
+
+ function fourthree() {
+	document.getElementById("page4").style.display = "none";
+	document.getElementById("page3").style.display = "block";
+ }
+
 
 </script>
 
