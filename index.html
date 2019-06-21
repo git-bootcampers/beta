@@ -37,17 +37,40 @@
 		
 		<div style="border: outset; padding: 50px; margin: 50px;">
 		
-			<div name="page1">
+			<div id="page1">
 			<h2>Chapter 1 - Origin</h2>
 			<p><br>The State University in Hegeman, New York offered Victor a scholarship. While attending classes there, he first met Reed Richards and Ben Grimm.They developed a dislike for each other, leading to Reed Richards commiting the first prank he had ever pulled, changing Victor's last name on a trophy to "Doof." Doom became obsessed with developing a machine that could project the astral form of a being into other dimensions, seeing it as a way to free his mother's soul from Mephisto's clutches. Reed pointed out a flaw in Doom's calculations, but Doom arrogantly ignored his warnings, feeling Reed was trying to upstage him, likely due to their dislike for each other. </p>
 			<p><br>Disgraced and bitter, Doom traveled the world. Eventually he came upon a small Tibetan village of monks who assisted him in creating a suit of armor. He returned to his homeland of Latveria to overthrow the leader and declare himself king. He then began to use his country's resources in order to further his plans of world domination.</p>
    
 				<div class="pagination">
-				<a href="#" style="float:left;">&laquo;</a>
 				<center>1</center>
-				<a href="#" style="float:right;">&raquo;</a>
+				<a href="#" onclick="one();" style="float:right;">&raquo;</a>
 				</div>
 			</div>
+			
+			<div id="page2" style="display: none;" >
+			<h2>Chapter 2 - Climax</h2>
+			<p><br>As part of a plan to conquer the world, Doom kidnapped Zebediah Killgrave, the mind-controlling supervillain known as Purple Man, and imprisoned him within a gigantic Psycho-Prism which not only bestowed Purple Man's powers on Doom, but also augmented them to a global scale.</p>
+			<p><br>Using this device, Doom manipulated the United Nations and every government to legally name him emperor of the Earth. Under Doom's command, the planet saw prosperity, equality, and the end of war and hunger, but at the cost of every citizen's free will. Additionally, Doom began to feel that his victory was almost meaningless, due to any lack of challenge to achieve or maintain his goal.</p>
+			
+				<div class="pagination">
+				<a href="#" onclick="twoone();" style="float:left;">&laquo;</a>
+				<center>2</center>
+				<a href="#" onclick="twothree();" style="float:right;">&raquo;</a>
+				</div>
+			</div>
+
+			<div id="page3" style="display: none;" >
+			<h2>Chapter 3 - Death</h2>
+			<p><br>As part of a plan to conquer the world, Doom kidnapped Zebediah Killgrave, the mind-controlling supervillain known as Purple Man, and imprisoned him within a gigantic Psycho-Prism which not only bestowed Purple Man's powers on Doom, but also augmented them to a global scale.</p>
+			<p><br>Using this device, Doom manipulated the United Nations and every government to legally name him emperor of the Earth. Under Doom's command, the planet saw prosperity, equality, and the end of war and hunger, but at the cost of every citizen's free will. Additionally, Doom began to feel that his victory was almost meaningless, due to any lack of challenge to achieve or maintain his goal.</p>
+			
+				<div class="pagination">
+				<a href="#" onclick="three();"  style="float:left;">&laquo;</a>
+				<center>3</center>
+				</div>
+			</div>
+			
 		</div>
 		
 			
@@ -55,17 +78,29 @@
 			
     </section>
 
-    <section>
-        <h1>Group 2: Title</h1>
-        <p>Duis orci nunc, rutrum a porttitor non, iaculis ut risus. Cras vulputate odio in lorem tincidunt luctus.
-            Nullam lacinia, ipsum id facilisis venenatis, tellus libero semper ipsum, eu placerat tellus tellus ut
-            ipsum. Cras neque magna, tincidunt vel mattis sit amet, elementum vel neque. Aliquam gravida imperdiet
-            luctus. Vivamus dapibus est vel pellentesque finibus. Morbi a erat condimentum, eleifend leo ut, rhoncus
-            ligula. Duis varius erat lacinia, ullamcorper dui sed, luctus massa. Quisque sollicitudin leo eu malesuada
-            venenatis. Praesent malesuada ipsum pharetra leo placerat, in lobortis nisi elementum. Curabitur rutrum
-            mauris id lectus dignissim, varius vulputate nunc ornare. Phasellus a dignissim nulla. Vestibulum eget erat
-            suscipit, vestibulum augue quis, placerat magna.</p>
-    </section>
 </body>
+	
+<script>
+function one() {
+	document.getElementById("page1").style.display = "none";
+	document.getElementById("page2").style.display = "block";
+ }
+ 
+ function twoone() {
+	document.getElementById("page2").style.display = "none";
+	document.getElementById("page1").style.display = "block"; 
+ }
+ 
+ function twothree() {
+	document.getElementById("page2").style.display = "none";
+	document.getElementById("page3").style.display = "block"; 
+ }
+ 
+ function three() {
+	document.getElementById("page3").style.display = "none";
+	document.getElementById("page2").style.display = "block"; 
+ }
+
+</script>
 
 </html>
